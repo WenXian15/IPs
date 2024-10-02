@@ -6,8 +6,10 @@ Docs to refer
 5. Shane Colton - https://scolton.blogspot.com/2024/01/pcie-deep-dive-part-4-ltssm.html
 6. Simon Southwell
 
-LTSSM
-
+1. LTSSM
+2. Transaction Layer
+3. Data Link Layer
+4. Physical Layer
 
 PCI Express IO Virtualization Specifications
 -> Allowing multiple operating systems running simultaneously within a single computer system to natively share PCI Express Devices.

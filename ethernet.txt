@@ -7,6 +7,8 @@ _______         __________                  ___________
  board| or else |        |                  |         |
 _______         __________                  ___________
 
+EMAC
+
 PHY Interface
 - MII(100Mbps)/ SGMII(1Gbps, serial)/ RGMII(1Gbps, reduced) 
 

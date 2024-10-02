@@ -6,8 +6,23 @@ Docs to refer
 5. Shane Colton - https://scolton.blogspot.com/2024/01/pcie-deep-dive-part-4-ltssm.html
 6. Simon Southwell
 
-1. LTSSM
+1. LTSSM 
+(Based on Section 4.2.4 Link Initialization and Training, LTSSM is performed by Physical Layer Logic Block aka PCS)
+
+Discovered and determined
+  -> Link width, Link data rate, Lane reversal, Lane  polarity
+Training does
+  -> Link data rate negotiation
+  -> Bit lock per lane
+  -> Lane polarity
+  -> Symbol lock or Block alignment per Lane
+  -> Lane ordering within a link
+  -> Link width negotiation
+  -> Lane-to-Lane de-skew within a multi-Lane Link
+
 2. Transaction Layer
+Four Address Spaces defined : Memory, I/O, Configuration, Message
+
 3. Data Link Layer
 4. Physical Layer
 

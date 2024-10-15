@@ -6,8 +6,50 @@ Docs to refer
 5. Shane Colton - https://scolton.blogspot.com/2024/01/pcie-deep-dive-part-4-ltssm.html
 6. Simon Southwell
 
+==========
+Background
+==========
+
+Part 1 :
+
+- Serial Transport
+PCIe Bandwidth Calculation, Differential Signals, No Common Clock, Packet-based Protocol
+
+- Links and Lanes
+Scalable Performance, Flexible Topology Options
+
+- Some Definitions
+Topology Characteristics, Root Complex, Switches and Bridges, Naive PCIe Endpoitns and Legacy PCIe Endpoints, Software Compatibility Characteristics
+
+- Device Layer
+Device core and interface to Transaction Layer, Transaction Layer, Data Link Layer, Physical Layer
+
+
+Bus, Device and Function (BDF)
+- Up to 256 Bus Numbers can be assigned by configuration software.
+- Up to 32 device attachments on a single PCI bus
+- Each device is designed with a function and function has its own configuration address space.
+
+Configuration Register Space (256 bytes per function)
+- 64-Bytes PCI Configuration Header Space + 192-Bytes Capability Structures
+- Extended Configuration Space are introduced due to the limitation in the original 256-bytes configuration region.  Therefore the configuration is extended from 256 bytes per function to 4KB.  The 960-dword Extended Configuration area is accessible using the Enhanced configuration mechanism and is "not visible to legacy PCI software".
+
+---------------------------------------------------- Offset 000h
+PCI Config Hdr (Contains Device ID, Vendor ID, Base Address)
+---------------------------------------------------- Offset 040h
+PCI Device-specific & New Capability register sets
+---------------------------------------------------- Offset 100h
+RCIe Extended Configuration Register Space
+----------------------------------------------------- Offse FFFh
+
+Part 2 :
+
+Part 3 :
+
+
 1. LTSSM 
-(Based on Section 4.2.4 Link Initialization and Training, LTSSM is performed by Physical Layer Logic Block aka PCS)
+- Based on Section 4.2.4 Link Initialization and Training, LTSSM is performed by Physical Layer Logic Block aka PCS
+- MAC serve as the middle man between the Data Link Layer and PHY Layer.  Not sure if MAC should be considered as part of PHY but definitely not Data link Layer.
 
 Discovered and determined
   -> Link width, Link data rate, Lane reversal, Lane  polarity

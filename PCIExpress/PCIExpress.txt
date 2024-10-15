@@ -10,7 +10,7 @@ Docs to refer
 Background
 ==========
 
-Part 1 :
+Part 1 : Big Picture
 
 - Serial Transport
 PCIe Bandwidth Calculation, Differential Signals, No Common Clock, Packet-based Protocol
@@ -52,9 +52,9 @@ Address Space & Transaction Routing
 - IO Range
 
 
-Part 2 :
+Part 2 : Transaction Layer
 
-Part 3 :
+Part 3 : Data Link Layer
 
 
 1. LTSSM 

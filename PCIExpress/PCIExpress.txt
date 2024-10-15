@@ -42,6 +42,16 @@ PCI Device-specific & New Capability register sets
 RCIe Extended Configuration Register Space
 ----------------------------------------------------- Offse FFFh
 
+Address Space & Transaction Routing
+- Configuration, Memory and IO Space
+- Prefetchable vs Non-prefetchable Memory Space.
+- BAR0 (10h), BAR1 (14h), BAR2 (18h), BAR3 (1Ch), BAR4 (20h), BAR5 (24h)
+- Upper BAR address is programmed by OS and BIOS of host PC for address space allocation.  The designer decides the memory space needed by the device by setting the lower bits of the address.
+
+- Base and Limit Registers (Switch)
+- IO Range
+
+
 Part 2 :
 
 Part 3 :
